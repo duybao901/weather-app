@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+.app{
+    background-image:url('./assets/img/cold-bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+    transition: .3s linear;
+    height: 100vh;
+}
+
+.app.warm{
+    background-image: url('./assets/img/warm-bg_1.jpg');
+}
+main{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0 ,.2 ),rgba(0, 0, 0 ,.75 ));
+    min-height: 100vh;
+    width: 100%;
+    padding: 25px;
+}
+.search-box{
+    width: 100%;
+    margin-top: -25px;
+    margin-bottom: 75px;
+}
+.search-box .search-bar{
+    background-color: transparent;
+    width: 100%;
+    border:none;
+    outline: none;
+    padding: 15px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 5px rgba(0, 0, 0, .2);
+    color: #313131;
+    font-size: 20px;
+}
+.location-box .location{
+    text-align: center;
+    color:#fff;
+    font-size:32px;
+    font-weight: 500;
+    text-shadow:3px 3px rgba(50, 50, 70, .5)
+}
+.location-box .date{
+   text-align: center;
+   font-size: 20px;
+   font-weight: 300;
+   font-style:italic;
+   color:#fff;
+   text-shadow: 2px 2px rgba(50, 50, 70, .5);
+}
+.weather-box{
+    text-align: center;
+}
+.weather-box .temp{
+    position: relative;
+    display: inline-block;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, .2);
+
+    padding: 15px 25px;
+
+    color:#FFF;
+    font-size: 102px;
+    font-weight: 900;
+
+    text-shadow:4px 4px rgba(50, 50, 70, .5);
+    box-shadow: 5px 5px rgba(0, 0, 0 ,.2 );
+
+    border-radius: 20px;
+}
+.search-box .search-bar{
+    color:white;
+    font-size: 22px;
+}
+
+.weather-box .weather{
+    color:#FFF;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px rgba(50, 50, 70, .5);
+}
+.weather-box .description{
+    font-size: 20px;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: 400;
+}
